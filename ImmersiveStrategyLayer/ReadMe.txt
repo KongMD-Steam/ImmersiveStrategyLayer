@@ -1,0 +1,1 @@
+Improves the user experience in the Strategy layer by blocking unnecessary popups, videos, and animations. See the Steam Workshop page for a video showcasing the mod's features. The Changelog tab in the mod's Workshop page will have the latest information on mod updates.
