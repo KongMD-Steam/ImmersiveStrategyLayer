@@ -10,6 +10,24 @@ var protected int TicksTillMap;
 
 //------------------------------begin vanilla function overrides------------------------------
 
+//Skip the bright animation that plays when entering the Geoscape 
+//This function triggers after loading a saved game into the strategy layer
+function UIAvengerFacilityMenu()
+{
+	local ISL_Settings settings;
+	
+	settings = new class'ISL_Settings';
+	if(settings.SkipGeoscapeAnimationOnEnter)
+	{
+		class'ISL_Helpers'.static.RemoveRemoteEvent('CIN_PostGeoscapeLoaded', settings.DebugLogging);
+	}
+	if(settings.InstantRoomTransitions)
+	{
+		class'ISL_Helpers'.static.RemoveRemoteEvent('PreM_GoToSoldier', settings.DebugLogging);
+	}
+	super.UIAvengerFacilityMenu();
+}
+
 //----------------------------------------------------
 // INSTANT ROOM TRANSITIONS
 //----------------------------------------------------
