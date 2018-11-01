@@ -37,9 +37,6 @@
     <Content Include="Src\ImmersiveStrategyLayer\Classes\ISL_Settings_Listener.uc">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Src\ImmersiveStrategyLayer\Classes\UIFacilityGrid_Listener_ISL.uc">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Src\ImmersiveStrategyLayer\Classes\XComHQ_ISL.uc">
       <SubType>Content</SubType>
     </Content>
